@@ -1,1 +1,6 @@
-status(200). send('OK') });
+exports.handler = async (event, context) => {
+    return {
+        statusCode: 200,
+        body: 'Hello, World!'
+    };
+};
