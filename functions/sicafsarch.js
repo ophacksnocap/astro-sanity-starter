@@ -4,7 +4,7 @@ const handler = async (event) => {
     const subject = event.queryStringParameters.name || '$boogersot'
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `{
+      body: ({
   "display_name": "Rick Carlton",
   "formatted_cashtag": "$boogersot",
   "is_verified_account": false,
@@ -15,8 +15,7 @@ const handler = async (event) => {
     "image_url": "https://franklin-assets.s3.amazonaws.com/apps/imgs/6dkVv7lKvdQu5J9Isid2iC.jpeg",
     "initial": "R",
     "accent_color": "#00D64F"
-  }
-}` }),
+  } }),
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
