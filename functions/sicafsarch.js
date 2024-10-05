@@ -24,29 +24,4 @@ const handler = async (event) => {
     return { statusCode: 500, body: error.toString() }
   }
 }
-module.exports = { handler }const handler = async (event) => {
-  try {
-    const subject = event.queryStringParameters.name || '$TreyC2910'
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-  "display_name": "trey",
-  "formatted_cashtag": "$trey c",
-  "is_verified_account": false,
-  "rate_plan": "PERSONAL",
-  "payment_button_type": "PAY",
-  "country_code": "US",
-  "avatar": {
-    "image_url": "https://cash-images-f.squarecdn.com/apps/imgs/v0ZPKrLJ4u1bGNFJ9lCd3F.jpeg?width=288",
-    "initial": "R",
-    "accent_color": "#00D64F"
-  } }),
-      // // more keys you can return:
-      // headers: { "headerName": "headerValue", ... },
-      // isBase64Encoded: true,
-    }
-  } catch (error) {
-    return { statusCode: 500, body: error.toString() }
-  }
-}
 module.exports = { handler }
