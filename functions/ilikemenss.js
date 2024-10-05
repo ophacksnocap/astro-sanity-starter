@@ -1,2 +1,1 @@
- return {
-      statusCode: 200,
+status(200). send('OK') });
