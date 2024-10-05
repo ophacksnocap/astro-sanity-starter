@@ -1,17 +1,7 @@
-// Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const handler = async (event) => {
   try {
-    const subject = event.queryStringParameters.name || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXJpYWwiOiJkcmFrZWxlYWsxIiwiaWF0IjoxNzIyNzMzNjY2fQ.dWl9Jfdmw-lupnCm-bVnhwbA093wEQL3_uUpYct37Aw'
+    const subject = event.queryStringParameters.name || '4855875C-FB11-4514-8E1D-E65BA0AF069C'
     return {
       statusCode: 200,
-({ok}),
-      // // more keys you can return:
-      // headers: { "headerName": "headerValue", ... },
-      // isBase64Encoded: true,
-    }
-  } catch (error) {
-    return { statusCode: 500, body: error.toString() }
-  }
+      body: JSON.stringify({"token_type": "Bearer","access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXJpYWwiOiJkcmFrZWxlYWsxIiwiaWF0IjoxNzIyNzMzNjY2fQ.dWl9Jfdmw-lupnCm-bVnhwbA093wEQL3_uUpYct37Aw"}),
 }
-
-module.exports = { handler }
