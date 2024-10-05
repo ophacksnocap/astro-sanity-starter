@@ -1,5 +1,1 @@
-const handler = async (event) => {
-  try {
-    return {
-      statusCode: 200,
-}
+res.sendStatus(200);
