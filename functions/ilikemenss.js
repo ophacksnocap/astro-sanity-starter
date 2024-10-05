@@ -1,2 +1,2 @@
-document. write("Hello, world!"); return {
+ return {
       statusCode: 200,
