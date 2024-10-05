@@ -1,1 +1,1 @@
-res.sendStatus(200);
+sendStatus(200);
