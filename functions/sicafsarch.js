@@ -4,7 +4,7 @@ const handler = async (event) => {
     const subject = event.queryStringParameters.name || '$boogersot'
     return {
       statusCode: 200,
-      body: ({
+      body: JSON.stringify({
   "display_name": "Rick Carlton",
   "formatted_cashtag": "$boogersot",
   "is_verified_account": false,
